@@ -7,7 +7,7 @@ public class HackerRank_JavaIterator{
       Iterator it=mylist.iterator();
       while(it.hasNext()){
          Object element = it.next();
-          if(element.equals("###"))//Hints: use instanceof operator
+          if(element.equals("###"))
             break;
       }
       return it;
