@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class HackerRanking_Sorting {
+public class HackerRank_Sorting {
 	
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
