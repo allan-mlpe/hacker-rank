@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class HackerRank_NestedLogic {
+public class HackerRank_RunningTimeAndComplexity {
 	
 	public static boolean isPrime(int n) {
 		boolean r = true;
