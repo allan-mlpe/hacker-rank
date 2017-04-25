@@ -10,7 +10,7 @@ public class HackerRank_GradingStudents {
 		if(n >= 38) {
 			int mod = n % 5;
 			
-			if(n >= 3) {
+			if(mod >= 3) {
 				n += 5-mod;
 			}
 		}
