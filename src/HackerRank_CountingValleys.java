@@ -8,7 +8,7 @@ public class HackerRank_CountingValleys {
 		try {
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			br.readLine();
-			boolean downSeaLevel = false;
+			
 			int valleyNum = 0;
 			int position = 0;
 			String stepSequence = br.readLine();
@@ -16,16 +16,9 @@ public class HackerRank_CountingValleys {
 			for (int i = 0; i < stepSequence.length(); i++) {
 				char step = stepSequence.charAt(i);
 				
-				if(step == 'D' && position == 0) {
-					downSeaLevel = true;
-					--position;
-				} else if(step == 'U' && position == -1) {
-					downSeaLevel = false;
-					++position;
-					valleyNum++;
-				} else {
-					position = step == 'U' ? ++position : --position;
-				}
+				position = step == 'U' ? ++position : --position;
+				
+				if(position == 0 && step == 'U') ++valleyNum;
 			}
 			
 			System.out.println(valleyNum);
