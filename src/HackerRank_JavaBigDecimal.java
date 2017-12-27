@@ -16,14 +16,11 @@ public class HackerRank_JavaBigDecimal {
                 arr[i] = br.readLine();
             }
 
-            Comparator<String> comparator = new Comparator<String>() {
-                @Override
-                public int compare(String o1, String o2) {
-                    BigDecimal o1Num = new BigDecimal(o1);
-                    BigDecimal o2Num = new BigDecimal(o2);
+            Comparator<String> comparator = (o1, o2) -> {
+                BigDecimal o1Num = new BigDecimal(o1);
+                BigDecimal o2Num = new BigDecimal(o2);
 
-                    return o2Num.compareTo(o1Num);
-                }
+                return o2Num.compareTo(o1Num);
             };
 
             //ordena o array em ordem decrescente
