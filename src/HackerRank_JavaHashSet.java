@@ -22,5 +22,6 @@ public class HackerRank_JavaHashSet {
             System.out.println(pairSet.size());
             i++;
         }
+        s.close();
     }
 }
